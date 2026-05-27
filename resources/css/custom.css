@@ -1,0 +1,950 @@
+/* Write your custom css here */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.business-plan-hero {
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.2), transparent 30%),
+    linear-gradient(135deg, #0f172a 0%, #1d4ed8 55%, #0ea5e9 100%);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.22);
+}
+
+.business-plan-intro {
+  max-width: 54rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.business-plan-scorecard {
+  min-width: 280px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  backdrop-filter: blur(8px);
+}
+
+.business-plan-panel {
+  border: 1px solid var(--bs-border-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  background: var(--bs-body-bg);
+}
+
+.business-plan-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--bs-secondary-color);
+}
+
+.business-plan-list li + li {
+  margin-top: 0.85rem;
+}
+
+.business-plan-risk {
+  border-left: 4px solid var(--bs-primary);
+  padding: 0.75rem 0 0.75rem 1rem;
+  margin-bottom: 1rem;
+  background: rgba(var(--bs-primary-rgb), 0.04);
+}
+
+.company-tree-board {
+  border-radius: 1.75rem;
+  padding: 1.1rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 12%, rgba(255, 255, 255, 0.45), transparent 22%),
+    linear-gradient(180deg, #2d285e 0%, #231d4d 52%, #171339 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 24px 60px rgba(23, 19, 57, 0.28);
+}
+
+.company-tree-board-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 1rem;
+}
+
+.company-tree-legend {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.company-tree-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.company-tree-chip::before {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.company-tree-chip-management::before {
+  background: #ffb11b;
+}
+
+.company-tree-chip-sales::before {
+  background: #ff5c6c;
+}
+
+.company-tree-chip-operations::before {
+  background: #5c52ff;
+}
+
+.company-tree-chip-finance::before {
+  background: #2aa8d8;
+}
+
+.company-tree-chip-administration::before {
+  background: #4ecb89;
+}
+
+.company-tree-stage {
+  position: relative;
+  min-height: 540px;
+}
+
+.company-tree-line {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.34);
+  border-radius: 999px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.company-tree-line-root {
+  left: 50%;
+  top: 86px;
+  width: 3px;
+  height: 40px;
+  transform: translateX(-50%);
+}
+
+.company-tree-line-branches {
+  left: 12.5%;
+  top: 126px;
+  width: 75%;
+  height: 3px;
+}
+
+.company-tree-line-sales,
+.company-tree-line-operations,
+.company-tree-line-finance,
+.company-tree-line-administration {
+  top: 126px;
+  width: 3px;
+  height: 20px;
+}
+
+.company-tree-line-sales {
+  left: 20%;
+}
+
+.company-tree-line-operations {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.company-tree-line-finance {
+  left: 62.5%;
+}
+
+.company-tree-line-administration {
+  left: 87.5%;
+}
+
+.company-tree-line-sales-team {
+  left: 12.5%;
+  top: 228px;
+  width: 3px;
+  height: 22px;
+}
+
+.company-tree-line-sales-manager {
+  left: 12.5%;
+  top: 330px;
+  width: 3px;
+  height: 22px;
+}
+
+.company-tree-line-sales-manager-rail {
+  left: calc(12.5% - 82px);
+  top: 352px;
+  width: 164px;
+  height: 3px;
+}
+
+.company-tree-line-sales-sub-1,
+.company-tree-line-sales-sub-2 {
+  top: 352px;
+  width: 3px;
+  height: 18px;
+}
+
+.company-tree-line-sales-sub-1 {
+  left: calc(12.5% - 82px);
+}
+
+.company-tree-line-sales-sub-2 {
+  left: calc(12.5% + 82px);
+}
+
+.company-tree-line-operations-team {
+  left: 37.5%;
+  top: 228px;
+  width: 3px;
+  height: 22px;
+}
+
+.company-tree-line-operations-rail {
+  left: calc(37.5% - 82px);
+  top: 250px;
+  width: 164px;
+  height: 3px;
+}
+
+.company-tree-line-operations-sub-1,
+.company-tree-line-operations-sub-2 {
+  top: 250px;
+  width: 3px;
+  height: 18px;
+}
+
+.company-tree-line-operations-sub-1 {
+  left: calc(37.5% - 82px);
+}
+
+.company-tree-line-operations-sub-2 {
+  left: calc(37.5% + 82px);
+}
+
+.company-tree-line-logistics-team {
+  left: calc(37.5% - 82px);
+  top: 330px;
+  width: 3px;
+  height: 16px;
+}
+
+.company-tree-line-logistics-manager {
+  left: calc(37.5% - 82px);
+  top: 428px;
+  width: 3px;
+  height: 22px;
+}
+
+.company-tree-line-logistics-manager-rail {
+  left: calc(37.5% - 144px);
+  top: 450px;
+  width: 124px;
+  height: 3px;
+}
+
+.company-tree-line-logistics-sub-1,
+.company-tree-line-logistics-sub-2 {
+  top: 450px;
+  width: 3px;
+  height: 18px;
+}
+
+.company-tree-line-logistics-sub-1 {
+  left: calc(37.5% - 144px);
+}
+
+.company-tree-line-logistics-sub-2 {
+  left: calc(37.5% - 20px);
+}
+
+.company-tree-line-procurement-team {
+  left: calc(37.5% + 82px);
+  top: 330px;
+  width: 3px;
+  height: 16px;
+}
+
+.company-tree-line-procurement-manager {
+  left: calc(37.5% + 82px);
+  top: 428px;
+  width: 3px;
+  height: 22px;
+}
+
+.company-tree-line-procurement-manager-rail {
+  left: calc(37.5% + 20px);
+  top: 450px;
+  width: 124px;
+  height: 3px;
+}
+
+.company-tree-line-procurement-sub-1,
+.company-tree-line-procurement-sub-2 {
+  top: 450px;
+  width: 3px;
+  height: 18px;
+}
+
+.company-tree-line-procurement-sub-1 {
+  left: calc(37.5% + 20px);
+}
+
+.company-tree-line-procurement-sub-2 {
+  left: calc(37.5% + 144px);
+}
+
+.company-tree-line-finance-team {
+  left: 62.5%;
+  top: 228px;
+  width: 3px;
+  height: 22px;
+}
+
+.company-tree-line-finance-manager {
+  left: 62.5%;
+  top: 330px;
+  width: 3px;
+  height: 22px;
+}
+
+.company-tree-line-finance-manager-rail {
+  left: calc(62.5% - 10px);
+  top: 352px;
+  width: 20px;
+  height: 3px;
+}
+
+.company-tree-line-finance-sub-1 {
+  left: 62.5%;
+  top: 352px;
+  width: 3px;
+  height: 18px;
+}
+
+.company-tree-line-admin-team {
+  left: 87.5%;
+  top: 228px;
+  width: 3px;
+  height: 22px;
+}
+
+.company-tree-line-admin-role-rail {
+  left: calc(87.5% - 82px);
+  top: 250px;
+  width: 164px;
+  height: 3px;
+}
+
+.company-tree-line-admin-sub-1,
+.company-tree-line-admin-sub-2 {
+  top: 250px;
+  width: 3px;
+  height: 18px;
+}
+
+.company-tree-line-admin-sub-1 {
+  left: calc(87.5% - 82px);
+}
+
+.company-tree-line-admin-sub-2 {
+  left: calc(87.5% + 82px);
+}
+
+.company-tree-card {
+  position: absolute;
+  width: 132px;
+  min-height: 72px;
+  border: 0;
+  border-radius: 1rem;
+  padding: 0.68rem 0.45rem 0.42rem;
+  color: #fff;
+  box-shadow: 0 18px 36px rgba(12, 12, 34, 0.28);
+}
+
+.company-tree-card-button {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.company-tree-card-button:hover,
+.company-tree-card-button:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 40px rgba(12, 12, 34, 0.34);
+  filter: brightness(1.03);
+}
+
+.company-tree-card-button:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.45);
+  outline-offset: 3px;
+}
+
+.company-tree-card h6 {
+  color: #fff;
+  font-size: 0.82rem;
+  margin-bottom: 0.12rem;
+}
+
+.company-tree-role,
+.company-tree-meta,
+.company-tree-note {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.company-tree-role {
+  font-size: 0.53rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.company-tree-meta {
+  margin-top: 0.25rem;
+  font-weight: 700;
+  font-size: 0.72rem;
+}
+
+.company-tree-hint {
+  margin-top: 0.15rem;
+  margin-bottom: 0;
+  font-size: 0.5rem;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.company-tree-avatar {
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background: #f8fafc;
+  color: #1f2937;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.68rem;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.22);
+}
+
+.company-tree-avatar-sub {
+  width: 24px;
+  height: 24px;
+  top: -9px;
+  font-size: 0.58rem;
+}
+
+.company-tree-status {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #22c55e;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.company-tree-card-management {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #ffb11b 0%, #ff8f1f 100%);
+}
+
+.company-tree-card-sales {
+  top: 146px;
+  left: calc(12.5% - 66px);
+  background: linear-gradient(135deg, #ff5c6c 0%, #f4434b 100%);
+}
+
+.company-tree-card-operations {
+  top: 146px;
+  left: calc(37.5% - 66px);
+  background: linear-gradient(135deg, #665dff 0%, #5648e6 100%);
+}
+
+.company-tree-card-finance {
+  top: 146px;
+  left: calc(62.5% - 66px);
+  background: linear-gradient(135deg, #31b4de 0%, #2294cb 100%);
+}
+
+.company-tree-card-administration {
+  top: 146px;
+  left: calc(87.5% - 66px);
+  background: linear-gradient(135deg, #4ecb89 0%, #2da466 100%);
+}
+
+.company-tree-card-sub {
+  min-height: 52px;
+  width: 84px;
+  padding-top: 0.42rem;
+  border-radius: 0.82rem;
+}
+
+.company-tree-card-sub h6 {
+  font-size: 0.59rem;
+  margin-bottom: 0.15rem;
+  line-height: 1.15;
+}
+
+.company-tree-card-sub .company-tree-role {
+  font-size: 0.44rem;
+  letter-spacing: 0.05em;
+}
+
+.company-tree-card-sub-sales-manager,
+.company-tree-card-sub-sales-account-1,
+.company-tree-card-sub-sales-account-2 {
+  background: linear-gradient(135deg, #ff5c6c 0%, #f4434b 100%);
+}
+
+.company-tree-card-sub-operations-logistics,
+.company-tree-card-sub-operations-procurement {
+  background: linear-gradient(135deg, #31b4de 0%, #2294cb 100%);
+  top: 268px;
+}
+
+.company-tree-card-sub-operations-logistics {
+  left: calc(37.5% - 132px);
+}
+
+.company-tree-card-sub-operations-procurement {
+  left: calc(37.5% + 32px);
+}
+
+.company-tree-card-sub-logistics-manager,
+.company-tree-card-sub-logistics-warehouse,
+.company-tree-card-sub-logistics-drivers,
+.company-tree-card-sub-procurement-manager,
+.company-tree-card-sub-procurement-officer {
+  background: linear-gradient(135deg, #665dff 0%, #5648e6 100%);
+}
+
+.company-tree-card-sub-finance-manager,
+.company-tree-card-sub-finance-officer {
+  background: linear-gradient(135deg, #31b4de 0%, #2294cb 100%);
+}
+
+.company-tree-card-sub-administration-hr,
+.company-tree-card-sub-administration-it,
+.company-tree-card-sub-administration-data {
+  background: linear-gradient(135deg, #4ecb89 0%, #2da466 100%);
+}
+
+.company-tree-card-sub-sales-manager {
+  top: 250px;
+  left: calc(12.5% - 42px);
+}
+
+.company-tree-card-sub-sales-account-1 {
+  top: 370px;
+  left: calc(12.5% - 110px);
+}
+
+.company-tree-card-sub-sales-account-2 {
+  top: 370px;
+  left: calc(12.5% + 26px);
+}
+
+.company-tree-card-sub-logistics-manager {
+  top: 350px;
+  left: calc(37.5% - 110px);
+}
+
+.company-tree-card-sub-logistics-warehouse {
+  top: 468px;
+  left: calc(37.5% - 162px);
+}
+
+.company-tree-card-sub-logistics-drivers {
+  top: 468px;
+  left: calc(37.5% - 58px);
+}
+
+.company-tree-card-sub-procurement-manager {
+  top: 350px;
+  left: calc(37.5% + 26px);
+}
+
+.company-tree-card-sub-procurement-officer {
+  top: 468px;
+  left: calc(37.5% + 46px);
+}
+
+.company-tree-card-sub-finance-manager {
+  top: 250px;
+  left: calc(62.5% - 42px);
+}
+
+.company-tree-card-sub-finance-officer {
+  top: 370px;
+  left: calc(62.5% - 42px);
+}
+
+.company-tree-card-sub-administration-hr {
+  top: 250px;
+  left: calc(87.5% - 42px);
+}
+
+.company-tree-card-sub-administration-it {
+  top: 370px;
+  left: calc(87.5% - 124px);
+}
+
+.company-tree-card-sub-administration-data {
+  top: 370px;
+  left: calc(87.5% + 40px);
+}
+
+.workflow-board {
+  border-radius: 1.5rem;
+  padding: 1.25rem;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.18), transparent 24%),
+    linear-gradient(135deg, #0f172a 0%, #111827 52%, #1f2937 100%);
+  box-shadow: 0 20px 46px rgba(15, 23, 42, 0.14);
+}
+
+.workflow-stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 128px;
+  gap: 0.8rem 2.1rem;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0.2rem 0;
+}
+
+.workflow-stage::before {
+  display: none;
+}
+
+.workflow-step {
+  position: relative;
+  min-height: 0;
+  height: 100%;
+  border-radius: 1.1rem;
+  padding: 0.8rem 0.82rem 0.72rem;
+  color: #fff;
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.22);
+  width: 100%;
+  max-width: 320px;
+}
+
+.workflow-step h6 {
+  color: #fff;
+  font-size: 0.82rem;
+  margin-bottom: 0.32rem;
+}
+
+.workflow-step p {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.workflow-step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-bottom: 0.55rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-weight: 700;
+  font-size: 0.72rem;
+}
+
+.workflow-step-left {
+  justify-self: end;
+}
+
+.workflow-step-right {
+  justify-self: start;
+}
+
+.workflow-step-left::after,
+.workflow-step-right::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 28px;
+  height: 4px;
+  margin-top: -2px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.workflow-step-left::after {
+  right: -28px;
+}
+
+.workflow-step-right::before {
+  left: -28px;
+}
+
+.workflow-step-right:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 50%;
+  width: 4px;
+  height: calc(100% + 0.8rem);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.workflow-step-management {
+  background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+}
+
+.workflow-step-operations {
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+}
+
+.workflow-step-warehouse {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+}
+
+.workflow-step-administration {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
+
+.workflow-step-sales {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.workflow-step-finance {
+  background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
+}
+
+.workflow-detail-card {
+  height: 100%;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 1rem;
+  padding: 1.1rem;
+  background: var(--bs-body-bg);
+}
+
+.workflow-detail-card h5 {
+  margin-bottom: 1rem;
+}
+
+.workflow-detail-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--bs-secondary-color);
+}
+
+.workflow-detail-list li + li {
+  margin-top: 0.7rem;
+}
+
+@media (max-width: 1399.98px) {
+  .company-tree-stage {
+    min-height: 600px;
+  }
+
+  .workflow-stage {
+    max-width: 860px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .company-tree-board {
+    padding: 1.35rem;
+  }
+
+  .company-tree-stage {
+    min-height: auto;
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .company-tree-line {
+    display: none;
+  }
+
+  .company-tree-card {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    min-height: 0;
+    margin-top: 1.6rem;
+  }
+
+  .company-tree-card-management,
+  .company-tree-card-sales,
+  .company-tree-card-operations,
+  .company-tree-card-finance,
+  .company-tree-card-administration {
+    left: auto;
+    top: auto;
+  }
+
+  .workflow-stage {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    max-width: 100%;
+  }
+
+  .workflow-step,
+  .workflow-step-left,
+  .workflow-step-right {
+    justify-self: stretch;
+    max-width: none;
+    height: auto;
+    min-height: 110px;
+  }
+
+  .workflow-step-left::after,
+  .workflow-step-right::before {
+    left: 18px;
+    right: auto;
+    top: -0.45rem;
+    width: 4px;
+    height: 0.9rem;
+    margin-top: 0;
+  }
+
+  .workflow-step-right:not(:last-child)::after {
+    left: 18px;
+    top: auto;
+    bottom: -0.9rem;
+    width: 4px;
+    height: 0.9rem;
+  }
+}
+
+.product-workspace-hero {
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.18), transparent 32%),
+    linear-gradient(135deg, #111827 0%, #0f766e 48%, #14b8a6 100%);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 24px 60px rgba(17, 24, 39, 0.2);
+}
+
+.product-workspace-intro {
+  max-width: 56rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.product-workspace-badge {
+  min-width: 280px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  backdrop-filter: blur(8px);
+}
+
+.product-group-card,
+.product-sequence-card,
+.product-taxonomy-card {
+  border: 1px solid var(--bs-border-color);
+  border-radius: 1rem;
+  padding: 1.1rem;
+  background: var(--bs-body-bg);
+  height: 100%;
+}
+
+.product-taxonomy-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--bs-secondary-color);
+}
+
+.product-taxonomy-list li + li {
+  margin-top: 0.55rem;
+}
+
+.product-sample-card {
+  overflow: hidden;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 1rem;
+  background: var(--bs-body-bg);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+}
+
+.product-sample-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  background: linear-gradient(135deg, #dbeafe, #e2e8f0);
+}
+
+.product-sample-body {
+  padding: 1rem;
+}
+
+.product-brand-card {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 1rem;
+  background: var(--bs-body-bg);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+  height: 100%;
+}
+
+.product-brand-image {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+  background: linear-gradient(135deg, #dbeafe, #e2e8f0);
+}
+
+.product-brand-body {
+  padding: 1rem;
+}
+
+.product-filter-select {
+  min-width: 220px;
+}
+
+.product-sequence-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  background: rgba(var(--bs-primary-rgb), 0.12);
+  color: var(--bs-primary);
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+}
+
+.product-workspace-note {
+  border-radius: 1rem;
+}

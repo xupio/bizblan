@@ -1,0 +1,21 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="32" fill="#ECFDF5"/>
+  <rect x="42" y="42" width="716" height="436" rx="28" fill="#111827"/>
+  <text x="88" y="96" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="34" font-weight="700">Networking Accessories</text>
+  <rect x="92" y="146" width="184" height="176" rx="24" fill="#0F766E"/>
+  <rect x="118" y="174" width="132" height="34" rx="12" fill="#CCFBF1"/>
+  <rect x="118" y="224" width="48" height="48" rx="12" fill="#99F6E4"/>
+  <rect x="182" y="224" width="48" height="48" rx="12" fill="#99F6E4"/>
+  <rect x="304" y="132" width="176" height="220" rx="24" fill="#065F46"/>
+  <rect x="332" y="166" width="120" height="28" rx="10" fill="#A7F3D0"/>
+  <rect x="332" y="214" width="120" height="18" rx="9" fill="#D1FAE5"/>
+  <rect x="332" y="244" width="120" height="18" rx="9" fill="#D1FAE5"/>
+  <rect x="332" y="274" width="120" height="18" rx="9" fill="#D1FAE5"/>
+  <rect x="520" y="146" width="178" height="176" rx="24" fill="#047857"/>
+  <rect x="548" y="176" width="122" height="26" rx="10" fill="#CCFBF1"/>
+  <circle cx="574" cy="246" r="18" fill="#99F6E4"/>
+  <circle cx="620" cy="246" r="18" fill="#99F6E4"/>
+  <circle cx="666" cy="246" r="18" fill="#99F6E4"/>
+  <path d="M120 392H676" stroke="#6EE7B7" stroke-width="18" stroke-linecap="round"/>
+  <path d="M176 430H620" stroke="#34D399" stroke-width="18" stroke-linecap="round"/>
+</svg>
